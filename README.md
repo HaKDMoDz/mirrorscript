@@ -15,3 +15,21 @@ Python2.7 (comes pre-bundled)
 >Run the script in privilege mode, such that sources.list could be edited
 
 > **$ sudo python mirrorscript.py**
+
+#---------------------------------------------------------------------------#
+UPDATED: 06/MAY/2018 To Execute on Python3+
+(Python 3.6.4)
+
+PROBLEM Running on Python3:
+returns error:
+ 
+when File "mirrorscript.py", line 11
+    print ""
+           ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("")?
+
+#------------------------------------------------------------
+Solution: 
+Python3+ versions now use print("") instead of print ""
+-all print methods used in mirrorscript.py are now converted to new required format
+#------------------------------------------------------------
